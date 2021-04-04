@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+    <script>
+        function onclickFun(){
+            // 获取标签对象。
+            var usernameObj = document.getElementById("username");
+            var usernameText = usernameObj.value;
+
+            var patt = /^\w{5,12}$/;
+
+            var usernameSpanObj = document.getElementById('usernameSpan');
+            usernameSpanObj.innerHTML = "";
+            /*
+             *  test()方法用于测试某个字符串，是不是匹配我的规则 ，
+             *  匹配就返回true。不匹配就返回false.s
+             *
+             * */
+            if (patt.test(usernameText)){
+                usernameSpanObj.innerHTML = "<img src='true.jpg'>";
+            }else {
+                usernameSpanObj.innerHTML = "<img src='false.jpg'>"
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <table border="0">
+        <tr>
+            <td>User:</td>
+            <td>
+                <input type="text" id="username" value="www">
+                <span id="usernameSpan" ></span>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <button onclick="onclickFun()"> 验证 </button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

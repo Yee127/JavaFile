@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Demo4_MVC" />
+        <module name="Demo1" />
+        <module name="Demo3_Controller" />
+        <module name="Demo6_i18n" />
+        <module name="SSM" />
+        <module name="Demo2_Annotation" />
+        <module name="Demo5_Interceptor" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Demo4" target="1.7" />
+      <module name="Demo4_Model" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

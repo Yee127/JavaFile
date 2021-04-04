@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.dao.UserMapperAnnotation">
+    <!--    结果集映射:
+            使用情况：数据库的字段名与JavaBean属性名不一致
+-->
+    <resultMap id="UserMapper" type="User">
+        <id column="id" property="id"/>
+        <!--        column:数据库表的列名  property：JavaBean的属性名   -->
+        <result column="name" property="name"/>
+        <result column="pwd" property="password"/>
+    </resultMap>
+<!--    <select id="selectUser" resultType="org.example.pojo.User">-->
+<!--        select * from user where id = #{id}-->
+<!--    </select>-->
+</mapper>

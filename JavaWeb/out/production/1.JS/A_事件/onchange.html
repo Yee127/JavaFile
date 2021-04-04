@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //静态
+        function onchangeFun(){
+            alert("Name has been changed!");
+        }
+
+        window.onload = function () {
+            let elementById = document.getElementById("onchange");
+            elementById.onchange = function () {
+                alert("Name has been changed!");
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>Input name</tr>
+        <tr>
+            <td><select name="" onchange="onchangeFun()">
+                <option value="">--name--</option>
+                <option value="">--Tom--</option>
+                <option value="">--Rose--</option>
+                <option value="">--Mike--</option>
+            </select></td>
+        </tr>
+        <tr>Input name</tr>
+        <tr>
+            <td><select name="" id="onchange" >
+                <option value="">--name--</option>
+                <option value="">--Tom--</option>
+                <option value="">--Rose--</option>
+                <option value="">--Mike--</option>
+            </select></td>
+        </tr>
+    </table>
+</body>
+</html>

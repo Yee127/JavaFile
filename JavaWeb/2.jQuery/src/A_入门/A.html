@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        $(function (){//    表示页面加载完成之后  相当于window.onload = function(){}
+            var $btn1 = $("#btn1");   // 按id查询对象
+            $btn1.click(function () {
+                alert("jQuery单击事件")
+            });
+
+        });
+
+        $(function () {
+            var $button = $("button");
+            for (var i = 0; i<$button.length;i++){
+                alert($button[i]);
+            }
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1"> --button-- </button>
+    <button> --button1-- </button>
+    <button> --button2-- </button>
+    <button> --button3-- </button>
+    <button> --button4-- </button>
+
+</body>
+</html>
