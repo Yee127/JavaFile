@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+//    静态
+    function onclickFun(){
+        alert("static");
+    }
+
+//    动态
+    window.onload = function (){
+        //获取标签对象
+        let btnObj = document.getElementById("btn01");
+
+    //    通过 标点对象.事件名 = function(){}
+        btnObj.onclick = function (){
+            alert("动态注册的onclick");
+        }
+    }
+</script>
+<body>
+    <button onclick="onclickFun()" >--1--</button>
+    <button id="btn01">--2--</button>
+</body>
+</html>

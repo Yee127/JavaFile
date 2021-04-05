@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.dao.BookMapper">
+<!--    public Integer add(Book book);-->
+    <insert id="add" parameterType="org.example.pojo.Book">
+        insert into t_book(id,name,author,price,sales,stock)
+        values(#{id},#{name},#{author},#{price},#{sales},#{stock})
+    </insert>
+
+    <delete id="delete">
+
+    </delete>
+
+    <update id="update">
+
+    </update>
+</mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Demo1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo2_Annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo2_Annotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo3_Controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo3_Controller/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo4_MVC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo4_MVC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo5_Interceptor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo5_Interceptor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo6_i18n/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Demo6_i18n/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SSM/src/main/java" charset="UTF-8" />
+  </component>
+</project>

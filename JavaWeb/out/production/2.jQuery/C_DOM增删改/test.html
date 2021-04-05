@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            /**         内部插入
+             *   (A).appendTo(B)   A插到B之后
+                (A).prependTo(B)  A插到B之前
+             */
+            $("<span>丨插到后面去丨</span>").appendTo($("#content"));
+            $("<span>丨插到前面去丨</span>").prependTo($("#content"));
+
+            /**
+             *     外部插入
+             *   insertAfter()
+             *   insertBefore()
+             */
+
+            $("<span>丨插到最后面去丨</span>"). insertAfter($("#span"));
+            $("<span>丨插到最前面去丨</span>").insertBefore($("#span"));
+
+            /**
+             *      替换
+             *      replaceWith()：
+             *              A.replaceWith(B)  用B替换A
+             *      replaceAll()：
+             *              A.replaceAll(B)   用A替换掉所有的B
+             */
+            $("#span1").replaceWith($("<span> 我要替换你1 </span>"));
+            $("<span> 我要替换你2 </span>").replaceAll($("#span2"));
+
+
+            /**
+             *      删除
+             *      remove()
+             *      a.remove()      删除a标签
+             *      empty()
+             *      b.empty()         清空b标签的内容
+             */
+
+            $("#remove").remove();
+            $("#empty").empty();
+        });
+
+
+    </script>
+
+
+</head>
+<body>
+
+<div>
+    <p>************* 这是内部插入***************</p>
+    <span id="content"> >>>这里阿巴阿巴<<<< </span>
+</div>
+<div>
+    <p>***************这是外部插入***************</p>
+    <span id="span">>>>>这里呼啦呼啦<<<<</span>
+</div>
+<div>
+    <p>***************这是替换***************</p>
+    <span id="span1">>>>>这里阿西阿西<<<<</span>
+    <p></p>
+    <span id="span2">>>>>这里阿西阿西2<<<<</span>
+</div>
+<div>
+    <p>***************删除操作***************</p>
+    <span id="remove">>>>>这里阿西阿西<<<<</span>
+    <p></p>
+    <span id="empty">>>>>这里阿西阿西2<<<<</span>
+</div>
+</body>
+</html>
